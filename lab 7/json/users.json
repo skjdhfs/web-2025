@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Ваня",
+        "lastName": "Денисов",
+        "avatar": "images/avatar_vanya.jpeg",
+        "profileDescription": "Привет! Я системный аналитик в ACME :)<br>Тут моя жизнь только для самых классных!",
+        "postsAmount": 9
+    },
+    {
+        "id": 2,
+        "name": "Лиза",
+        "lastName": "Дёмина",
+        "avatar": "images/avatar_liza.jpeg",
+        "profileDescription": "",
+        "postsAmount": 1
+    }
+]
