@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Golos UI";
+    src: url(fonts/Golos-UI/golos-ui_regular.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+* {
+    font-family: "Golos UI"; 
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    color: rgba(34, 34, 34, 1);
+ }
+
+ .header__avatar {
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+ }
+
+ .header__username {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+ .header__text {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+ }
+
+ .photos {
+    width: 322px;
+    height: 322px;
+    border-radius: 2px;
+    background: rgba(180, 180, 180, 1);
+ }
