@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/profile.css" type="text/css" rel="stylesheet">
+        <link href="styles/font.css" type="text/css" rel="stylesheet">
+        <title>Профиль</title>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="#" class="menu__icon-wrapper menu__icon-wrapper_active">
+                <span class="menu__icon menu__icon_home"></span>
+            </a>
+            <a href="#" class="menu__icon-wrapper">
+                <div class="menu__icon menu__icon_user"></div>
+            </a>
+            <a href="#" class="menu__icon-wrapper">
+                <div class="menu__icon menu__icon_plus"></div>
+            </a>
+        </div>
+
+        <?php
+            $jsonDataUsers = file_get_contents('json/users.json');
+            $jsonDataPosts = file_get_contents('json/posts.json');
+            $users = json_decode($jsonDataUsers, true);
+            $posts = json_decode($jsonDataPosts, true);
+            $user = $users[0];
+            if (isset($_GET["id"])) {
+                $id = filter_var($_GET["id"], FILTER_VALIDATE_INT, ['options' => ["min_range" => 1, "max_range" => count($users)]]);
+                if ($id) {
+                    $user = $users[$id - 1];
+                }  
+            }
+            
+        ?>
+
+        <div class="header">
+            <img src="<?= $user['avatar'] ?>" alt="Аватар пользователя" class="header__avatar">
+            <span class="header__username">
+                <?php 
+                    echo $user['name'], ' ', $user['lastName'];
+                ?>
+            </span>
+            <p class="header__text">
+                <?php
+                    echo $user['profileDescription'];
+                ?>
+            </p>
+            <div>
+                <img src="icons/image.svg" alt="Изображения">
+                <span>
+                    <?php 
+                        echo $user['postsAmount'], ' ', 'постов';
+                    ?>
+                </span>     
+            </div>
+               
+        </div>
+
+        <?php        
+            for ($i = 0; $i < count($posts); $i++) {
+                $post = $posts[$i];
+                if ($post["userId"] === $user["id"]) {
+                    require 'templates/profile_image.php';
+                };    
+            }
+        ?>    
+    </body>
+</html>
