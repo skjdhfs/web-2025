@@ -1,0 +1,68 @@
+[
+    {
+        "createdBy": 1,
+        "id": 1,
+        "content": "Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городке, занесенном снегом по ручку двери...»",
+        "image": "images/night.jpeg"
+    },
+    {
+        "createdBy": 2,
+        "id": 2,
+        "content": "",
+        "image": "images/post_liza.jpg"
+    },
+    {
+        "createdBy": 1,
+        "id": 3,
+        "content": "Мой любимый город!",
+        "image": "images/city.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 4,
+        "content": "Супер вкусно! Только много... Вообще люблю ходить в кафешки, но очень часто натыкаюсь на огромные порции. У вас такого не бывает?\nМне кажется у меня постоянно, либо я такой едок хилый, либо что...? Хотя, вот для папы всё наоборот))) Ему всегда порции маленькими кажутся, ахаха) А в школе меня классная не выпускала из столовой пока не доем... на всю жизнь запомнил((",
+        "image": "images/dessert.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 5,
+        "content": "",
+        "image": "images/party.jpg"
+    },
+    {
+        "createdBy": 1,
+        "id": 6,
+        "content": "",
+        "image": "images/coffee.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 7,
+        "content": "",
+        "image": "images/book.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 8,
+        "content": "",
+        "image": "images/street.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 9,
+        "content": "",
+        "image": "images/people.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 10,
+        "content": "",
+        "image": "images/shop.jpeg"
+    },
+    {
+        "createdBy": 1,
+        "id": 11,
+        "content": "a jhs skj",
+        "image": "images/a jhs skj-cbf4b.jpeg"
+    }
+]
