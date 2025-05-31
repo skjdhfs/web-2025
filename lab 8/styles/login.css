@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font: 700 140px/1.28 "Golos UI", sans-serif;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: -1.5px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.form {
+    max-width: 343px;
+}
+
+.label {
+    display: block;
+    font: 400 15px/1.2 "Golos UI", sans-serif;
+    color:rgba(34, 34, 34, 1);
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+.input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid rgba(242, 243, 245, 1);
+    background: rgba(242, 243, 245, 1);
+    border-radius: 10px;
+    padding: 13px 12px;
+    font: 400 15px/1.2 "Golos UI", sans-serif;
+    transition: border, 0.3s ease;
+    outline: none;
+}
+
+.input:focus {
+    border: 1px solid rgba(63, 138, 224, 1);
+}
+
+.input:hover {
+    border: 1px solid rgba(237, 237, 237, 1);
+    background-color: rgba(237, 237, 237, 1);
+}
+
+.input__info {
+    display: block;
+    margin-bottom: 15px;
+    font: 400 13px/1.2 "Golos UI", sans-serif;
+    color: rgba(128, 128, 128, 1);
+}
+
+/*input_error {
+    border: 1px solid rgba(230, 70, 70, 1);
+}
+
+.input__info_error {
+    color: rgba(230, 70, 70, 1);;
+}*/
+
+.button {
+    display: block;
+    margin-top: 32px;
+    width: 100%;
+    font: 500 16px "Golos UI", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 10px;
+    padding: 14.5px;
+    border: 2px solid rgba(34, 34, 34, 1);
+    transition: border, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:focus {
+    border: 2px solid rgba(63, 138, 224, 1);
+}
+
+.button:disabled {
+    border: 2px solid rgba(180, 180, 180, 1);
+    background-color: rgba(180, 180, 180, 1);
+}
+
+.button:hover {
+    border: 2px solid rgba(55, 55, 55, 1);
+    background-color: rgba(55, 55, 55, 1);
+}
