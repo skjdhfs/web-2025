@@ -1,0 +1,1 @@
+<img src="images/<?= $post['image'] ?>" alt="Изображение поста" class="profile__photos">
