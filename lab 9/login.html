@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/font.css" type="text/css" rel="stylesheet">
+        <link href="styles/login.css" type="text/css" rel="stylesheet">
+        <title>Страница входа</title>
+    </head>
+    <body> 
+        <div class="login">
+            <div class="login__background">
+                <h1 class="login__title">Войти</h1>
+                <img class="login__image" src="images/background_login.jpeg" alt="Войти">
+            </div>
+            
+            <form class="form">
+                <div class="form__email">
+                    <label class="form__label" for="email">Электропочта</label>
+                    <input id="email" type="email" class="form__input form__input_error">
+                    <span class="form__info form__info_error">Введите электропочту в формате *****@***.**</span> 
+                </div>
+                <div>
+                    <label class="form__label" for="password">Пароль</label>
+                    <div class="form__password">
+                        <input id="password" type="password" class="form__input form__input_error">
+                        <div class="form__icon-wrapper">
+                            <div class="form__icon-eye"></div>
+                        </div>
+                    </div>  
+                </div>
+                <input type="submit" class="form__button" value="Продолжить">
+            </form>
+        </div>
+    </body>
+</html>
